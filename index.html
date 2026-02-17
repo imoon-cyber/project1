@@ -1,14 +1,90 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMOON Robotics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <div class="container">
+            <a href="#" class="logo-link"><img src="images/logo.png" alt="IMOON Robotics Logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#robots">Robots</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline id="bg-video">
+            <source src="https://videos.pexels.com/video-files/8538742/8538742-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>Revolutionizing Healthcare with Robotics</h2>
+            <p>We develop and service intelligent robots to enhance patient care and support healthcare professionals.</p>
+            <a href="#robots" class="btn">Discover Our Robots</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About IMOON Robotics</h2>
+            <p>At IMOON Robotics, we are dedicated to advancing healthcare through the power of robotics. Our mission is to create innovative robotic solutions that improve patient outcomes, streamline hospital operations, and empower healthcare providers. We are a team of passionate engineers, designers, and healthcare experts committed to building a healthier future.</p>
+        </div>
+    </section>
+
+    <section id="robots" class="robots">
+        <div class="container">
+            <div class="robot-card">
+                <h3>CareBot</h3>
+                <p>A versatile robot assistant for patient monitoring, medication delivery, and telemedicine.</p>
+            </div>
+            <div class="robot-card">
+                <h3>SurgiBot</h3>
+                <p>A precision robotics platform for minimally invasive surgery.</p>
+            </div>
+            <div class="robot-card">
+                <h3>RehabBot</h3>
+                <p>An intelligent robot for personalized physical therapy and rehabilitation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Robot Deployment & Integration</li>
+                <li>24/7 Technical Support</li>
+                <li>Custom Robotics Solutions</li>
+                <li>Training & Education</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or want to learn more? Get in touch with our team.</p>
+            <a href="mailto:contact@imoonrobotics.com" class="btn">Email Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 IMOON Robotics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
